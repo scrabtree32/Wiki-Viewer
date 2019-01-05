@@ -1,0 +1,117 @@
+body {
+  font-family: 'Open-sans', sans-serif;
+  background-color: #d3ffce;
+  color: #0f2148;
+}
+
+.title {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.random {
+  background-color: #0f2148;
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+}
+.random a {
+  color: #e7e7e7;
+  text-decoration: none;
+  line-height: 2.5;
+  letter-spacing: 2px;
+}
+
+.search-container {
+  text-align: left;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.search-container .search-bar {
+  padding-top: 100px;
+}
+.search-container .search-bar a {
+  color: #0f2148;
+}
+.search-container #bar {
+  overflow: hidden;
+}
+.search-container input {
+  color: #0f2148;
+  background-color: #d3ffce;
+  border: none;
+  border-bottom: 2px solid #0f2148;
+}
+.search-container input::placeholder {
+  color: #0f2148;
+}
+.search-container input:focus {
+  outline: none;
+}
+
+.closed {
+  position: absolute;
+  top: 140px;
+  left: calc(50% - 100px);
+  z-index: 1;
+  -webkit-transition-property: left;
+  -webkit-transition-duration: 1.9s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: left;
+  transition-duration: 1.9s;
+  transition-timing-function: ease-in-out;
+}
+
+.open {
+  position: absolute;
+  top: 140px;
+  left: calc(50% + 75px);
+  z-index: 1;
+  -webkit-transition-property: left;
+  -webkit-transition-duration: 1.9s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: left;
+  transition-duration: 1.9s;
+  transition-timing-function: ease-in-out;
+}
+
+.bar-close {
+  width: 0px;
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.bar-open {
+  width: 200px;
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.articles div {
+  border: solid 1px #0f2148;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  margin: 30px auto;
+  max-width: 600px;
+  cursor: pointer;
+}
